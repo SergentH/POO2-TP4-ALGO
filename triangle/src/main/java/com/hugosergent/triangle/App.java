@@ -1,3 +1,5 @@
+package com.hugosergent.triangle;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Image;
@@ -8,11 +10,15 @@ import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class main {
-
-	public static void main(String[] args) {
-
-		Image image = null;  
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	Image image = null;  
 		try {
 		    File pathToFile = new File("triangle.png");
 		    image = ImageIO.read(pathToFile);
@@ -31,7 +37,5 @@ public class main {
 		fen.setLocationRelativeTo(null);
 		fen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		fen.setVisible(true);
-
-	}
-
+    }
 }
