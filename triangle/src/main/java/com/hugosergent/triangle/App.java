@@ -5,19 +5,20 @@ import java.awt.Dimension;
 import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
-
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-/**
- * Hello world!
- *
- */
+import org.opencv.core.Core;
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
+
 public class App 
 {
     public static void main( String[] args )
     {
+    	System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+    	
     	Image image = null;  
 		try {
 		    File pathToFile = new File("triangle.png");
